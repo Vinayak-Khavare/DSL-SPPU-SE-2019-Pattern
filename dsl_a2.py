@@ -10,7 +10,7 @@ def score(marks):
     # n = len(marks)
     n = int(input("enter the no of students that wrote the exams: "))
     for i in range(n):
-        r, mark = map(int, input("enter roll no and mark of the student: ").split())
+        r, mark = map(int, input("enter roll no and marks of the student(roll no sholud be between 1-n): ").split())
         marks[r-1]=mark
     return marks
 

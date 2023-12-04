@@ -40,7 +40,8 @@ for i in range(n):
 # print(lst)
 
 result = bubblesort(lst)
-# print(result)
+print("Sorted score of the students, ")
+print(result)
 
 print("\nTop 5 Scores are, ")
 c=0

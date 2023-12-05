@@ -50,12 +50,12 @@ result = fibsearch(names, x)
 
 
 if(result==-1):
-    names.append(x)
     print("The person you are searching is not saved in the phonebook.")
     choice = input("Do you want to add him to phone book(Y/N)?")
     if(choice=="y" or choice=="Y"):
+        names.append(x)
         number = int(input("Enter the phone number: "))
-        Phone_book[name]=number
+        Phone_book[x]=number
     else:
         pass
 else:

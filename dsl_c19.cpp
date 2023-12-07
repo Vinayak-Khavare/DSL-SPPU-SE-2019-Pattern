@@ -28,7 +28,6 @@ class div{
 		
 		void add(int p, string nm){
 			node* temp = new node;
-			char ch;
 			if(head==NULL){
 				temp->prn=p;
 				temp->name=nm;

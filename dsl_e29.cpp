@@ -97,7 +97,7 @@ int main(){
 			cout<<"No. of jobs you are entering(max=5): ";
 			cin>>t;
 			for(int i=0; i<t; i++){
-				cout<<"Enter job id and its priority(0/1): ";
+				x:cout<<"Enter job id and its priority(0/1): ";
 				cin>>obj_j.jobId>>obj_j.prior;
 				if(obj_j.prior==0){
 					obj.enqueue(obj_j.jobId);
@@ -107,6 +107,7 @@ int main(){
 				}
 				else{
 					cout<<"Wrong input"<<endl;
+					goto x;
 				}
 			}
 		}

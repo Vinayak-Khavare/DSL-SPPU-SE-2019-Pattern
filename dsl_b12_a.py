@@ -29,16 +29,19 @@
 def Binsearch(names_of_people, item, low, high):
     names_of_people.sort()
     index = -1
-    mid = (low+high)//2
-    if(item==names_of_people[mid]):
-        index = mid
-        return index
-    elif(item > (names_of_people[mid])):
-        low = mid+1
-        return Binsearch(names_of_people, item, low, high)
+    if(high>=low):
+        mid = (low+high)//2
+        if(item==names_of_people[mid]):
+            index = mid
+            return index
+        elif(item > (names_of_people[mid])):
+            low = mid+1
+            return Binsearch(names_of_people, item, low, high)
+        else:
+            high = mid
+            return Binsearch(names_of_people, item, low, high)
     else:
-        high = mid
-        return Binsearch(names_of_people, item, low, high)
+        return index
     
             
 Phone_book = {}
